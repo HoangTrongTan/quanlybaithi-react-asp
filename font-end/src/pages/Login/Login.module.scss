@@ -1,0 +1,95 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+@mixin mobile { 
+    @media (max-width: #{$mobile-width - 1px}) {     
+      @content;   
+   } 
+} 
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .tabs{
+        width: 700px;
+        min-height: 220px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background:url('https://i.imgur.com/3eP9Z4O.png') center no-repeat;
+        background-size:cover;
+    }
+    .dang-nhap{
+        background-color: #ffffffc8;
+        box-shadow: 0 10px 10px 10px #c6c5c5;
+        border-radius: 10px;
+        display: flex;
+        border: 5px solid rgba(145, 145, 244, 0.511);
+        overflow: hidden;
+        @include mobile{
+            justify-content: center;
+        }
+        .left{
+            @include mobile{
+                display: none;
+            }
+            display: flex;
+            align-items: center;
+            padding: 0 20px 0 200px;
+            position: relative;
+            .left-form{
+                z-index: 10;
+                color: #fff;
+
+            }
+            &::before{
+                    position: absolute;
+                    content: "";
+                    background: linear-gradient(to right, rgb(1, 1, 194), rgb(105, 105, 238));
+                    top: 0;
+                    left: -200px;
+                    right: 0;
+                    bottom: -200px;
+                    transform: rotate( 10deg) skewY(40deg);
+                    transform-origin: bottom right;
+                    border: 5px solid rgba(145, 145, 244, 0.511);
+                }
+        }
+        .right{
+            .right-form{
+                padding: 100px 30px;
+                .login-item{
+                    position: relative;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        right: -35px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .icon{
+                        color: greenyellow;
+                        position: absolute;
+                        right: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            h2{
+                margin: 0 0 30px 0;
+                text-align: center;
+                color: blue;
+            }
+        }
+        
+    }
+}

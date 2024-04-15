@@ -1,0 +1,46 @@
+
+.dark{
+    .Head_child__gIfOo{
+        background-image: linear-gradient(to right, black, black) !important;
+        color: #fff;
+    }
+    .LayoutMain_sidebar__SY7WA{
+        background: black;
+        p{
+            color: #fff;
+        }
+        ul{
+            background-color: black !important;
+            li{
+                background-color: #fff;
+                &:hover{
+                    background-color: #06045e !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+    .KhoaLopMon_content__A0M22{
+        background-color: #2b2a2a;
+    }
+    .MonhocWithKhoa_content__1JWUF{
+        background-color: #2b2a2a;
+        .ListMon_wrapper__yLyd8{
+            background-color: black;
+            .MonItem_wrapper__bj59K{
+                background-color: #1e1d6c;
+                color: #fff;
+            }
+        }
+        .BoxKhoa_wrapper-list__4ctvR{
+            background-color: black;
+            .MonItem_wrapper__bj59K{
+                background-color: #1e1d6c;
+                color: #fff;
+            }
+        }
+    }
+    .Danhsach_content__xbOjq{
+        background-color: #2b2a2a;
+    }
+}

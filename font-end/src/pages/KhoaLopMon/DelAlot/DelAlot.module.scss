@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    .icon{
+        font-size: 50px;
+        text-align: center;
+        color: yellow;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        max-height: 250px;
+        overflow-y: overlay;
+        p{
+            font-weight: 600;
+            border: 3px dashed #1677FF;
+        }
+    }
+    p{
+        text-align: center;
+        
+    }
+    .btn{
+        
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+.thongbao__list{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    overflow-y: overlay;
+    .thongbao__item{
+        padding: 5px;
+        border-radius: 7px;
+        color: #fff;
+        width: 300px;
+        p{
+            font-weight: normal;
+        }
+    }
+}

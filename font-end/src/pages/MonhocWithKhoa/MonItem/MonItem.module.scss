@@ -1,0 +1,27 @@
+.wrapper{
+    padding: 15px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px 3px #e7e6e6;
+    border-radius: 10px;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+    .draging{
+        background-color: aqua;
+    }
+    .name{
+        gap: 1em;
+        display: flex;
+    }
+    .delete-item{
+        cursor: pointer;
+        padding: 5px;
+        color: red;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: rgb(245, 99, 99);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .form-item{
+        position: relative;
+        td{
+            padding: 5px 5px;
+        }
+        .img-no-value{
+            position: absolute;
+            right: -55px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background: transparent;
+        }
+        .icons-sucess{
+            position: absolute;
+            right: -33px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: greenyellow;
+        }
+    }
+}

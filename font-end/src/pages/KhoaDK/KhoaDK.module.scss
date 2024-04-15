@@ -1,0 +1,33 @@
+.wrapper{
+    position: relative;
+    display: flex;
+    .list{
+        width: 60%;
+    }
+    .actions{
+        padding: 10px;
+        display: flex;
+        gap: 1.5em;
+    }
+    .list_class{
+        display: flex;
+        gap: 1em;
+        .list_box{
+            display: flex;
+            flex-direction: column;
+            max-height: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            .item__class{
+                padding: 0px 10px;
+                transition: all 0.2s linear;
+                border-radius: 7px;
+                color: #808080;
+                &:hover{
+                    border-left: 3px solid #6B7C08;
+                    background-color:#cccec1 ;
+                }
+            }
+        }
+    }
+}

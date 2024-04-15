@@ -1,8 +1,9 @@
-/back-end/Webquanlybaithi/bin
-/back-end/Webquanlybaithi/.git
-/back-end/Webquanlybaithi/.vs
+/back-end/bin
+/back-end/.git
+/back-end/.vs
+/back-end/obj
 
-/font-end/quanlybaithi/node_modules
-/font-end/quanlybaithi/build
-/font-end/quanlybaithi/.git
+/font-end/node_modules
+/font-end/build
+/font-end/.git
 

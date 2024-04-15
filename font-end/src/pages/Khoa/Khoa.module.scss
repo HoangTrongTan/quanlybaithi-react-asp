@@ -1,0 +1,58 @@
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    .list{
+        width: 60%;
+    }
+    .actions{
+        padding: 10px;
+        display: flex;
+        gap: 1.5em;
+    }
+    .wrapper-render{
+        display: flex;
+        max-height: 150px;
+        gap: 2em;
+        justify-content: center;
+        p{
+            padding: 1px 5px;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+            font-weight: 400;
+            &:hover{
+                background-color: aqua;
+                border-left:3px solid rgb(4, 122, 122);
+            }
+        }
+        .wrapper-khoadk{
+            width: 10%;
+            .title{
+                text-align: center;
+            }
+            .list{
+                overflow-y: overlay;
+                max-height: 100px;
+                width: 100%;
+                p{
+                    
+                    text-align: center;
+                }
+            }
+        }
+        .wrapper-account{
+            width: 30%;
+            .title{
+                text-align: center;
+            }
+            .list{
+                max-height: 100px;
+                overflow-y: overlay;
+                width: 100%;
+                p{
+                    // text-align: center;
+                }
+            }
+        }
+    }
+}

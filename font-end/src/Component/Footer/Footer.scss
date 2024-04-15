@@ -1,0 +1,17 @@
+.wrapper-footer{
+    margin-top: 20px;
+    padding: 10px;
+    .child-footer{
+        border-top:2px solid rgb(203, 201, 201);
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            color: rgb(164, 162, 162);
+        }
+        a{
+            color: rgb(171, 169, 169);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+@mixin mobile { 
+    @media (max-width: #{$mobile-width - 1px}) {     
+      @content;   
+   } 
+} 
+@mixin tablet { 
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) 
+    {       
+        @content;   
+    } 
+}  
+.wrapper{
+    @include mobile{
+        width: 94%;
+    }
+    @include tablet(){
+        width: 100%;
+    }
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    .content{
+        width: 95%;
+        border-radius: 10px;
+        
+        padding: 10px;
+        background-color: #Ffff;
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s linear;
+        flex-wrap: wrap;
+    }
+}

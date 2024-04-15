@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+::selection{
+    background-color: #B360E3;
+    color: #fff;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #EBEBEB;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    
+    p{
+        font-weight: 900;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .ant-tabs-nav{
+        margin: 0 !important;
+    }
+    .ant-table-pagination{
+        justify-content: center !important;
+    }
+    
+}

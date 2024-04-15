@@ -1,0 +1,51 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px;  
+@mixin mobile { 
+    @media (max-width: #{$mobile-width - 1px}) {     
+      @content;   
+   } 
+} 
+@mixin tablet { 
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) 
+    {       
+        @content;   
+    } 
+}  
+.wrapper{
+    width: 100%;
+    .sidebar{
+        @include tablet{
+            display: none;
+        }
+        @include mobile{
+            display: none;
+        }
+        position: fixed;
+        left: 0;
+        width: 220px;
+        top: 0;
+        bottom: 0;
+        padding: 10px 20px;
+        background: #fff;
+        border-right: 1px solid #CECECE;
+    }
+    .container{
+        @include tablet{
+            width: 100%;
+            margin: 0;
+            padding-left: 2px;
+        }
+        @include mobile{
+            width: 100%;
+            margin: 0;
+            padding-left: 2px;
+        }
+        width: calc(100% - 280px);
+        margin-left: calc(220px + 40px);
+    }
+    .content{
+        // padding: 20px;
+        width: 100%;
+    }
+}
